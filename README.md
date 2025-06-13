@@ -123,4 +123,4 @@ If you are interested in contributing to `xor-cipher-core`, make sure to take a 
 
 [Test Badge]: https://github.com/GDPSApp/xor-cipher-core/workflows/test/badge.svg
 
-[xor-cipher]: https://github.com/GDPSApp/xor-cipher
+[xor-cipher]: https://github.com/GDPSApp/xor-cipher-python
