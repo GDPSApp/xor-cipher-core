@@ -11,7 +11,7 @@
 
 ## Installing
 
-**Python 3.8 or above is required.**
+**Python 3.9 or above is required.**
 
 ### `pip`
 
@@ -24,13 +24,13 @@ $ pip install xor-cipher-core
 Alternatively, the library can be installed from source:
 
 ```console
-$ pip install git+https://github.com/xor-cipher/xor-cipher-core.git
+$ pip install git+https://github.com/GDPSApp/xor-cipher-core.git
 ```
 
 Or via cloning the repository:
 
 ```console
-$ git clone https://github.com/xor-cipher/xor-cipher-core.git
+$ git clone https://github.com/GDPSApp/xor-cipher-core.git
 $ cd xor-cipher-core
 $ pip install .
 ```
@@ -83,7 +83,7 @@ You can find the documentation [here][Documentation].
 
 ## Support
 
-If you need support with the library, you can send an [email][Email].
+If you need support with the library, you can send an [email][Email] or join the [Discord server][Discord].
 
 ## Changelog
 
@@ -102,16 +102,17 @@ If you are interested in contributing to `xor-cipher-core`, make sure to take a 
 
 `xor-cipher-core` is licensed under the MIT License terms. See [License][License] for details.
 
-[Email]: mailto:support@nekit.dev
+[Email]: mailto:dev@gdps.app
+[Discord]: https://gdps.app/discord
 
-[Actions]: https://github.com/xor-cipher/xor-cipher-core/actions
+[Actions]: https://github.com/GDPSApp/xor-cipher-core/actions
 
-[Changelog]: https://github.com/xor-cipher/xor-cipher-core/blob/main/CHANGELOG.md
-[Code of Conduct]: https://github.com/xor-cipher/xor-cipher-core/blob/main/CODE_OF_CONDUCT.md
-[Contributing Guide]: https://github.com/xor-cipher/xor-cipher-core/blob/main/CONTRIBUTING.md
-[Security]: https://github.com/xor-cipher/xor-cipher-core/blob/main/SECURITY.md
+[Changelog]: https://github.com/GDPSApp/xor-cipher-core/blob/main/CHANGELOG.md
+[Code of Conduct]: https://github.com/GDPSApp/xor-cipher-core/blob/main/CODE_OF_CONDUCT.md
+[Contributing Guide]: https://github.com/GDPSApp/xor-cipher-core/blob/main/CONTRIBUTING.md
+[Security]: https://github.com/GDPSApp/xor-cipher-core/blob/main/SECURITY.md
 
-[License]: https://github.com/xor-cipher/xor-cipher-core/blob/main/LICENSE
+[License]: https://github.com/GDPSApp/xor-cipher-core/blob/main/LICENSE
 
 [Package]: https://pypi.org/project/xor-cipher-core
 [Documentation]: https://xor-cipher.github.io/xor-cipher
@@ -120,6 +121,6 @@ If you are interested in contributing to `xor-cipher-core`, make sure to take a 
 [Version Badge]: https://img.shields.io/pypi/v/xor-cipher-core
 [Downloads Badge]: https://img.shields.io/pypi/dm/xor-cipher-core
 
-[Test Badge]: https://github.com/xor-cipher/xor-cipher-core/workflows/test/badge.svg
+[Test Badge]: https://github.com/GDPSApp/xor-cipher-core/workflows/test/badge.svg
 
-[xor-cipher]: https://github.com/xor-cipher/xor-cipher
+[xor-cipher]: https://github.com/GDPSApp/xor-cipher

@@ -1,12 +1,12 @@
 [package]
 name = "xor-cipher-core"
-version = "1.1.2"
-authors = ["nekitdev", "RealistikDash"]
-edition = "2021"
+version = "1.1.3"
+authors = ["GDPS App <hello@gdps.app>"]
+edition = "2024"
 description = "Simple, reusable and optimized XOR ciphers in Python (core)."
 readme = "README.md"
 documentation = "https://xor-cipher.github.io/xor-cipher"
-repository = "https://github.com/xor-cipher/xor-cipher-core"
+repository = "https://github.com/GDPSApp/xor-cipher-core"
 license = "MIT"
 keywords = ["xor", "cipher", "core"]
 publish = false
@@ -16,7 +16,7 @@ name = "_xor_cipher_core"
 crate-type = ["cdylib"]
 
 [dependencies.pyo3]
-version = "0.23.3"
+version = "0.25.1"
 features = ["extension-module", "generate-import-lib"]
 
 [dependencies.xor-cipher]

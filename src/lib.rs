@@ -3,7 +3,7 @@ use pyo3::{
     prelude::{PyAnyMethods, PyByteArrayMethods, PyBytesMethods, PyModuleMethods},
     pyfunction as py_function, pymodule as py_module,
     types::{PyByteArray, PyBytes, PyInt, PyModule},
-    wrap_pyfunction_bound as wrap_py_function_bound, Bound, PyResult,
+    wrap_pyfunction as wrap_py_function, Bound, PyResult,
 };
 
 static EXPECTED_BYTE: &str = "expected `byte` (`int` in range `[0, 255]`)";
@@ -22,7 +22,7 @@ fn xor<'py>(data: &Bound<'py, PyBytes>, key: &Bound<'py, PyInt>) -> PyResult<Bou
 
     xor_cipher::xor(&mut rust_data, rust_key);
 
-    Ok(PyBytes::new_bound(data.py(), &rust_data))
+    Ok(PyBytes::new(data.py(), &rust_data))
 }
 
 #[py_function]
@@ -37,7 +37,7 @@ fn cyclic_xor<'py>(data: &Bound<'py, PyBytes>, key: &Bound<'py, PyBytes>) -> Bou
 
     xor_cipher::cyclic_xor(&mut rust_data, rust_key);
 
-    PyBytes::new_bound(data.py(), &rust_data)
+    PyBytes::new(data.py(), &rust_data)
 }
 
 #[py_function]
@@ -64,10 +64,10 @@ fn cyclic_xor_in_place(data: &Bound<'_, PyByteArray>, key: &Bound<'_, PyBytes>) 
 
 #[py_module]
 fn _xor_cipher_core(module: &Bound<'_, PyModule>) -> PyResult<()> {
-    module.add_function(wrap_py_function_bound!(xor, module)?)?;
-    module.add_function(wrap_py_function_bound!(cyclic_xor, module)?)?;
-    module.add_function(wrap_py_function_bound!(xor_in_place, module)?)?;
-    module.add_function(wrap_py_function_bound!(cyclic_xor_in_place, module)?)?;
+    module.add_function(wrap_py_function!(xor, module)?)?;
+    module.add_function(wrap_py_function!(cyclic_xor, module)?)?;
+    module.add_function(wrap_py_function!(xor_in_place, module)?)?;
+    module.add_function(wrap_py_function!(cyclic_xor_in_place, module)?)?;
 
     Ok(())
 }

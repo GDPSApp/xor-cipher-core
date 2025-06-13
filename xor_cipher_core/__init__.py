@@ -1,12 +1,12 @@
 """Simple, reusable and optimized XOR ciphers in Python (core)."""
 
 __description__ = "Simple, reusable and optimized XOR ciphers in Python (core)."
-__url__ = "https://github.com/xor-cipher/xor-cipher-core"
+__url__ = "https://github.com/GDPSApp/xor-cipher-core"
 
 __title__ = "xor_cipher_core"
-__author__ = "nekitdev"
+__author__ = "GDPS App"
 __license__ = "MIT"
-__version__ = "1.1.2"
+__version__ = "1.1.3"
 
 from xor_cipher_core._xor_cipher_core import (
     cyclic_xor,
