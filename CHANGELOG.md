@@ -2,6 +2,10 @@
 
 <!-- changelogging: start -->
 
+## [1.2.0](https://github.com/GDPSApp/xor-cipher-core/tree/v1.2.0) (2025-06-13)
+
+No significant changes.
+
 ## [1.1.2](https://github.com/GDPSApp/xor-cipher-core/tree/v1.1.2) (2024-12-24)
 
 No significant changes.
